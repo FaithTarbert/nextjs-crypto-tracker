@@ -39,7 +39,7 @@ const Details = ({ ninja, favCoins, addCoin }) => {
   //resets add to fav button, adds coin to array, sends user back to list page
   const handleClose = () => {
     setIsFavorite(false)
-    addCoin(ninja.name)
+    addCoin(ninja)
     router.push("/ninjas")
   }
 
